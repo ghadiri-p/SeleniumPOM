@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" >
+
+    <parameter name="websiteAddress" value="http://demo-store.seleniumacademy.com/"/>
+    <parameter name="UserName" value="ghadiri.p11@gmail.com"/>
+    <parameter name="Password" value="@12345a"/>
+
+    <test verbose="2" preserve-order="true"
+          name="D:/AUTOMATION/seleniumExamplePOM/src/test/java/test/AddToCartTest.java">
+        <classes>
+            <class name="test.AddToCartTest">
+                <methods>
+                    <include name="addToCartTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="D:/AUTOMATION/seleniumExamplePOM/src/test/java/test/LoginPageTest.java"  >
+        <classes>
+            <class name="test.LoginPageTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

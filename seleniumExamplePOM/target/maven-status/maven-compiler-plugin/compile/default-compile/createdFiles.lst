@@ -1,0 +1,8 @@
+pages\BasePage.class
+pages\Cart.class
+model\Goods.class
+pages\LoginPage.class
+pages\AccountPage.class
+pages\NewArrivalsPage.class
+model\User.class
+pages\ProductDetails.class
