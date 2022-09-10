@@ -64,7 +64,7 @@ public class LoginPageTest {
         logger.info("Entering UserName and wrong Password...");
         loginPage.login(user.getUserName(), "12h345");
         Assert.assertEquals(driver.getTitle(), "Customer Login");
-        logger.info(loginPage.getMassage());
+        logger.info(loginPage.getMessage());
     }
 
 
