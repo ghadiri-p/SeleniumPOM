@@ -20,7 +20,7 @@ public class LoginPage {
     WebElement loginButton;
 
     @FindBy(xpath = "//li[@class='error-msg']/descendant::span")
-    WebElement massage;
+    WebElement message;
 
 
     public LoginPage(WebDriver driver) {
@@ -44,8 +44,8 @@ public class LoginPage {
     }
 
 
-    public String getMassage() {
-        return massage.getText();
+    public String getMessage() {
+        return message.getText();
     }
 
 
